@@ -16,12 +16,12 @@ namespace TestProject_Calculator
             
             numbers = CleanString(numbers);
             String[] numbersInArray = numbers.Split(',');
-            int total = 0;
+            int somme = 0;
             
             foreach (String number in numbersInArray)
-                total = AddNumber(total, number);
+                somme = AddNumber(somme, number);
             
-            return total;
+            return somme;
         }
 
         private static int AddNumber(int total, string stringNumber)
